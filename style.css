@@ -17,5 +17,7 @@ body {
 .container {
     width: 320px;
     height: 520px;
+    max-width: 320px;
+    max-height: 520px;
     background-color: #fff;
 }
