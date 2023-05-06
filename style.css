@@ -5,12 +5,17 @@
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     font-family: 'Roboto', sans-serif;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    width: 320px;
+    width: 520px;
     height: 720px;
     background-color: #fff;
 }
