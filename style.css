@@ -16,8 +16,6 @@ body {
 }
 
 .container {
-    /* width: 320px;
-    height: 720px; */
     max-width: 320px;
     max-height: 820px;
 }
@@ -121,12 +119,8 @@ img {
     display: flex;
     padding: 0;
     margin: 0;
-    /* justify-content: center; */
-    /* align-items: center; */
     flex-direction: column;
     gap: 15px;
-    /* overflow-y: scroll; */
-    /* add scroll in y direction */
     overflow-y: scroll;
     flex-shrink: 0;
 }
@@ -146,7 +140,6 @@ img {
     background-color: white;
     color: black;
     overflow-y: scroll;
-    /* the elements size should not reduce */
     flex-shrink: 0;
 }
 
