@@ -51,11 +51,28 @@ img {
     gap: 15px;
 }
 
+/* .middle input::placeholder {
+    padding: 0;
+    top: 30%;
+    left: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #8F8F8F;
+} */
+
 .top-middle {
     width: 100%;
-    height: 180px;
-    background-color: white;
-    word-wrap: break-word;
+    height: 160px;
+    background-color: #444059;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+/* disable scrollbar in my page */
+.top-middle::-webkit-scrollbar {
+    display: none;
 }
 
 .middle-middle {
@@ -84,44 +101,26 @@ img {
     font-weight: bolder;
 }
 
-.middle input {
-    border-radius: 10px;
-    background-color: #444059;
-    box-sizing: border-box;
-    /* padding-top: -80px; */
-    /* text-align: center; */
-}
+/* change the placeholder cursor position */
 
 /* give inner padding for input tag */
-.middle input {
-    box-sizing: border-box;
-    padding: 20px 10px;
-    text-align: center;
-    word-wrap: normal;
-}
-
-.middle input:focus {
-    padding: 10px;
-
-}
-
-.middle input::placeholder {
-    padding: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 15px;
-    font-weight: bolder;
-    color: #8F8F8F;
-}
-
-.middle-middle input {
-    text-align: center;
-}
-
 .middle-middle input::placeholder {
     padding: 0;
     position: absolute;
     top: 35%;
-    left: 45%;
+    left: 43%;
+}
+
+.middle-middle input {
+    text-align: center;
+    font-size: large;
+}
+
+.footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
 }
