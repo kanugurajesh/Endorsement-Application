@@ -13,7 +13,7 @@ const database = getDatabase(app);
 const databaseName = "endorsing"
 const dbRef = ref(database, databaseName);
 
-
+// get the elements from the html
 let table = document.getElementById("table")
 let left = document.getElementById("left")
 let right = document.getElementById("right")
@@ -23,6 +23,7 @@ let textareaValue = document.getElementById("textareaValue")
 let number = 0;
 let booksData = new Set();
 
+// add event listener to the publish button
 publish.addEventListener("click", function () {
     setDataToDatabase();
     getDataFromDatabase();
@@ -44,6 +45,8 @@ function setDataToDatabase() {
     let rightValue = right.value
     let textValue = textareaValue.value
     let isDataExist = false;
+
+    // check if the value is empty
 
     if (leftValue === "") {
         alert("Please enter your name")
@@ -75,6 +78,8 @@ function setDataToDatabase() {
         }
     });
 
+    // if the object is not in the database add it to the database
+
     if (!isDataExist) {
         set(push(dbRef), data);
     }
@@ -93,24 +98,32 @@ function getDataFromDatabase() {
         } else {
             booksData = new Set();
         }
-        // booksData = new Set(Object.entries(snapshot.val()));
         // loop through the set
         booksData.forEach((book) => {
+
             // create a div element
             let div = document.createElement("div")
+            // set the class for the div
             div.setAttribute("class", "row")
             // create a h4 element
             let h4 = document.createElement("h4")
+            // set the class for the h4
             h4.setAttribute("class", "row-2")
+            // set the inner html for the h4
             h4.innerHTML = book[1].left
+            // append the h4 to the div
             div.appendChild(h4)
             // create a p element
             let p = document.createElement("p")
+            // set the class for the p
             p.setAttribute("class", "row-3")
+            // set the inner html for the p
             p.innerHTML = book[1].textValue
+            // append the p to the div
             div.appendChild(p)
             // create a new div element
             let div2 = document.createElement("div")
+            // set the class for the div2
             div2.setAttribute("class", "row-2")
             // set id for div2
             div2.setAttribute("id", "div2")
@@ -128,16 +141,17 @@ function getDataFromDatabase() {
             h43.setAttribute("data-id", book[0])
             h43.innerHTML = "🖤 " + book[1].likes
             div2.appendChild(h43)
-
             // create a new h4 element
             let h44 = document.createElement("h4")
             h44.setAttribute("class", "col-3")
             h44.innerHTML = "🗑️ Delete"
             div2.appendChild(h44)
             // append the div2 to the div
-
             div.appendChild(div2)
             table.appendChild(div)
+
+            // add event listener to the h43
+
             h43.addEventListener("click", function () {
                 table.innerHTML = ""
                 let bool;
@@ -156,6 +170,8 @@ function getDataFromDatabase() {
                 h43.innerHTML = "🖤 " + number
             });
 
+            // add event listener to the h44
+
             h44.addEventListener("dblclick", function () {
                 let id = h43.getAttribute("data-id")
                 remove(ref(database, databaseName + "/" + id));
@@ -165,4 +181,6 @@ function getDataFromDatabase() {
         });
     });
 }
+
+// call the function
 getDataFromDatabase();

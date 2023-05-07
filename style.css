@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -59,9 +63,9 @@ img {
 }
 
 /* disable scrollbar in my page */
-.top-middle::-webkit-scrollbar {
+/* .top-middle::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .middle-middle {
     display: flex;
@@ -125,9 +129,9 @@ img {
     flex-shrink: 0;
 }
 
-.tables::-webkit-scrollbar {
+/* .tables::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .row {
     width: 100%;
@@ -143,19 +147,15 @@ img {
     flex-shrink: 0;
 }
 
-.row::-webkit-scrollbar {
+/* .row::-webkit-scrollbar {
     display: none;
-}
+} */
 
 #div2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-}
-
-.col-2 {
-    color: black;
 }
 
 .col-3 {
