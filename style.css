@@ -51,15 +51,6 @@ img {
     gap: 15px;
 }
 
-/* .middle input::placeholder {
-    padding: 0;
-    top: 30%;
-    left: 10px;
-    font-size: 15px;
-    font-weight: bolder;
-    color: #8F8F8F;
-} */
-
 .top-middle {
     width: 100%;
     height: 160px;
@@ -100,8 +91,6 @@ img {
     font-size: x-large;
     font-weight: bolder;
 }
-
-/* change the placeholder cursor position */
 
 /* give inner padding for input tag */
 .middle-middle input::placeholder {
