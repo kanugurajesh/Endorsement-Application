@@ -24,60 +24,12 @@ let number = 0;
 let booksData = new Set();
 
 publish.addEventListener("click", function () {
-    /*
-    // get the value of left tag
-    let leftValue = left.value
-    let rightValue = right.value
-    let textValue = textareaValue.value
-
-    // create a div element
-    let div = document.createElement("div")
-    div.setAttribute("class", "row")
-    // create a h4 element
-    let h4 = document.createElement("h4")
-    h4.setAttribute("class", "row-2")
-    h4.innerHTML = leftValue
-    div.appendChild(h4)
-    // create a p element
-    let p = document.createElement("p")
-    p.setAttribute("class", "row-3")
-    p.innerHTML = textValue
-    div.appendChild(p)
-    // create a new div element
-    let div2 = document.createElement("div")
-    div2.setAttribute("class", "row-2")
-    // set id for div2
-    div2.setAttribute("id", "div2")
-    // create a h4 element
-    let h42 = document.createElement("h4")
-    h42.setAttribute("class", "col-1")
-    h42.innerHTML = rightValue
-    div2.appendChild(h42)
-    // create a h4 element
-    let h43 = document.createElement("h4")
-    h43.setAttribute("class", "col-2")
-    // set id for h43
-    h43.setAttribute("id", "h43")
-    h43.innerHTML = "🖤 " + number
-    div2.appendChild(h43)
-    div.appendChild(div2)
-    table.appendChild(div)
-
-    setDataToDatabase();
-
-    // add event listener to h43
-    h43.addEventListener("click", function () {
-        number = number + 1
-        h43.innerHTML = "🖤 " + number
-    });
-    */
     setDataToDatabase();
     getDataFromDatabase();
 });
 
 // set the data to the database
 function setDataToDatabase() {
-
     // get the data from the database
     onValue(dbRef, (snapshot) => {
         // store all the snapchat values in a set
@@ -109,7 +61,8 @@ function setDataToDatabase() {
         left: leftValue,
         right: rightValue,
         textValue: textValue,
-        likes: 0
+        likes: 0,
+        addLike: true
     }
 
     // check if the object is already in the database
@@ -128,8 +81,10 @@ function setDataToDatabase() {
 }
 
 // create a function to get the data from the database and add it to the list
+
 function getDataFromDatabase() {
     // clear the table
+    console.log(87)
     table.innerHTML = ""
     // get the data from the database
     onValue(dbRef, (snapshot) => {
@@ -171,31 +126,25 @@ function getDataFromDatabase() {
             div2.appendChild(h43)
             div.appendChild(div2)
             table.appendChild(div)
-
-            // add event listener to h43
-            // h43.addEventListener("click", function () {
-            //     // let number = book[1].likes + 1
-            //     update(ref(database, databaseName + "/" + book[0]), {
-            //         likes: book[1].likes + 1
-            //     });
-            //     // get the likes
-            //     number = book[1].likes + 1
-            //     h43.innerHTML = "🖤 " + number
-            // });
-            // create a function to update the likes when click on the h43
             h43.addEventListener("click", function () {
-                // get the id of the database
+                table.innerHTML = ""
+                let bool;
                 let id = h43.getAttribute("data-id")
-                // get the likes
-                number = book[1].likes + 1
-                // update the likes
+                if (book[1].addLike === false) {
+                    number = book[1].likes - 1
+                    bool = true
+                } else {
+                    number = book[1].likes + 1
+                    bool = false
+                }
                 update(ref(database, databaseName + "/" + id), {
-                    likes: number
+                    likes: number,
+                    addLike: bool
                 });
-                // get the likes
-                number = book[1].likes + 1
                 h43.innerHTML = "🖤 " + number
             });
         });
     });
 }
+
+getDataFromDatabase();
