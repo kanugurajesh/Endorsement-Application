@@ -10,7 +10,11 @@ const appSettings = {
 // Initialize Firebase
 const app = initializeApp(appSettings);
 const database = getDatabase(app);
-const databaseName = "endorsing"
+
+// take the database name from the user and store it in a variable
+let databaseName = prompt("Please enter the name of the group you belong to")
+
+// const databaseName = "endorsing"
 const dbRef = ref(database, databaseName);
 
 // get the elements from the html
