@@ -7,7 +7,6 @@
 body {
     width: 100vw;
     height: 100vh;
-    font-family: 'Roboto', sans-serif;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -16,11 +15,10 @@ body {
 }
 
 .container {
-    width: 320px;
-    height: 720px;
+    /* width: 320px;
+    height: 720px; */
     max-width: 320px;
     max-height: 720px;
-    /* background-color: #fff; */
 }
 
 .header {
