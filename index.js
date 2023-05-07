@@ -2,6 +2,7 @@ let table = document.getElementById("table")
 let left = document.getElementById("left")
 let right = document.getElementById("right")
 let publish = document.getElementById("publish")
+let h43;
 let textareaValue = document.getElementById("textareaValue")
 let number = 0;
 
@@ -37,8 +38,16 @@ publish.addEventListener("click", function () {
     // create a h4 element
     let h43 = document.createElement("h4")
     h43.setAttribute("class", "col-2")
+    // set id for h43
+    h43.setAttribute("id", "h43")
     h43.innerHTML = "🖤 " + number
     div2.appendChild(h43)
     div.appendChild(div2)
     table.appendChild(div)
+
+    // add event listener to h43
+    h43.addEventListener("click", function () {
+        number = number + 1
+        h43.innerHTML = "🖤 " + number
+    });
 });

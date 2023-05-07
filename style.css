@@ -19,7 +19,7 @@ body {
     /* width: 320px;
     height: 720px; */
     max-width: 320px;
-    max-height: 720px;
+    max-height: 820px;
 }
 
 .header {
@@ -80,6 +80,7 @@ img {
     height: 60px;
     background-color: #444059;
     border-radius: 10px;
+    color: white;
 }
 
 .bottom-middle {
@@ -89,6 +90,7 @@ img {
     border-radius: 10px;
     font-size: x-large;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 /* give inner padding for input tag */
@@ -115,12 +117,16 @@ img {
 
 .tables {
     width: 100%;
-    height: 170px;
+    height: 250px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+    margin: 0;
+    /* justify-content: center; */
+    /* align-items: center; */
     flex-direction: column;
     gap: 15px;
+    /* overflow-y: scroll; */
+    /* add scroll in y direction */
     overflow-y: scroll;
 }
 
@@ -131,14 +137,20 @@ img {
 .row {
     width: 100%;
     height: 100px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: left;
     gap: 15px;
     background-color: white;
     color: black;
+    overflow-y: scroll;
+    /* the elements size should not reduce */
+    flex-shrink: 0;
+}
+
+.row::-webkit-scrollbar {
+    display: none;
 }
 
 #div2 {
@@ -150,4 +162,8 @@ img {
 
 .col-2 {
     color: black;
+}
+
+#h43 {
+    cursor: pointer;
 }
