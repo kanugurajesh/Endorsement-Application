@@ -83,13 +83,17 @@ function setDataToDatabase() {
 // create a function to get the data from the database and add it to the list
 
 function getDataFromDatabase() {
-    // clear the table
-    console.log(87)
-    table.innerHTML = ""
     // get the data from the database
     onValue(dbRef, (snapshot) => {
+        table.innerHTML = ""
         // store all the snapshot values in a set
-        booksData = new Set(Object.entries(snapshot.val()));
+        if (snapshot.val() !== null) {
+            // store all the snapshot values in a set
+            booksData = new Set(Object.entries(snapshot.val()));
+        } else {
+            booksData = new Set();
+        }
+        // booksData = new Set(Object.entries(snapshot.val()));
         // loop through the set
         booksData.forEach((book) => {
             // create a div element
@@ -124,6 +128,14 @@ function getDataFromDatabase() {
             h43.setAttribute("data-id", book[0])
             h43.innerHTML = "🖤 " + book[1].likes
             div2.appendChild(h43)
+
+            // create a new h4 element
+            let h44 = document.createElement("h4")
+            h44.setAttribute("class", "col-3")
+            h44.innerHTML = "🗑️ Delete"
+            div2.appendChild(h44)
+            // append the div2 to the div
+
             div.appendChild(div2)
             table.appendChild(div)
             h43.addEventListener("click", function () {
@@ -143,8 +155,14 @@ function getDataFromDatabase() {
                 });
                 h43.innerHTML = "🖤 " + number
             });
+
+            h44.addEventListener("dblclick", function () {
+                let id = h43.getAttribute("data-id")
+                remove(ref(database, databaseName + "/" + id));
+                getDataFromDatabase();
+            });
+
         });
     });
 }
-
 getDataFromDatabase();

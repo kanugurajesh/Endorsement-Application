@@ -158,6 +158,10 @@ img {
     color: black;
 }
 
+.col-3 {
+    color: red;
+}
+
 #h43 {
     cursor: pointer;
 }
