@@ -19,5 +19,10 @@ body {
     height: 720px;
     max-width: 320px;
     max-height: 720px;
-    background-color: #fff;
+    /* background-color: #fff; */
+}
+
+img {
+    width: 100px;
+    height: 100px;
 }
