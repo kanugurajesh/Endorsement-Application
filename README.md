@@ -20,6 +20,23 @@ Welcome to the ultimate social synergy platform where you and your amazing peers
 
 🚀 **Elevate Your Social Experience:** Elevate your social media experience with PeerPraise. It's more than an app; it's a positive movement to amplify the goodness within each one of us. 🚀✨
 
+<br>
+
+## Usage Instructions
+
+### Open the Application:
+
+🚀 Launch the application, and get ready to dive into your group discussions.
+💬 Enter the group name to access and interact with messages exclusive to that group.
+
+### Post Management:
+
+✏️ Create Posts: Share your thoughts by writing and posting within the selected group.
+❤️ Like Posts: Express your appreciation for content by giving posts a thumbs up.
+🗑️ Delete Posts: Keep things tidy by managing your posts and deleting when necessary.
+
+<br>
+
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://rajeshportfolio.me/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajesh-kanugu-aba8a3254/)
