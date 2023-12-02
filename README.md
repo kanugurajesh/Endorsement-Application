@@ -6,8 +6,6 @@
 
 # Endorsement Application
 
-Introducing "PeerPraise"! 🌟🤝
-
 Welcome to the ultimate social synergy platform where you and your amazing peers come together to uplift and celebrate each other! 🚀🎉
 
 👥 **Join Groups:** Connect with like-minded individuals and dive into communities that resonate with your interests, passions, and goals. Whether you're into tech, art, fitness, or anything in between, there's a group waiting for you!
@@ -21,8 +19,6 @@ Welcome to the ultimate social synergy platform where you and your amazing peers
 🔐 **Safe and Inclusive:** PeerPraise is committed to providing a safe and inclusive space for all. Embrace diversity, connect across borders, and build a network of encouragement that knows no boundaries. 🌍🤗
 
 🚀 **Elevate Your Social Experience:** Elevate your social media experience with PeerPraise. It's more than an app; it's a positive movement to amplify the goodness within each one of us. 🚀✨
-
-Ready to embark on this uplifting journey together? Join PeerPraise now and let the peer support revolution begin! 🚀👫 #PeerPraise #TogetherWeRise
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://rajeshportfolio.me/)
