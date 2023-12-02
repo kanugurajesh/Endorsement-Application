@@ -1,8 +1,10 @@
-# Endorsement Application
-
+#### 🌟 please start this repo if you like it
+<br>
 <p align="center">
   <img src="https://github.com/kanugurajesh/Endorsement-application/assets/120458029/6a2cf29f-d84c-411f-9878-8078107123b4" alt="Endorsement Application Logo" width=150 height=150>
 </p>
+
+# Endorsement Application
 
 Introducing "PeerPraise"! 🌟🤝
 
