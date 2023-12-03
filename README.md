@@ -20,8 +20,6 @@ Welcome to the ultimate social synergy platform where you and your amazing peers
 
 🚀 **Elevate Your Social Experience:** Elevate your social media experience with PeerPraise. It's more than an app; it's a positive movement to amplify the goodness within each one of us. 🚀✨
 
-<br>
-
 ## Usage Instructions
 
 ### Open the Application:
@@ -35,19 +33,18 @@ Welcome to the ultimate social synergy platform where you and your amazing peers
 ❤️ Like Posts: Express your appreciation for content by giving posts a thumbs up.
 🗑️ Delete Posts: Keep things tidy by managing your posts and deleting when necessary.
 
-<br>
-
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://rajeshportfolio.me/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajesh-kanugu-aba8a3254/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/exploringengin1)
-
 ## Tech Stack
 
 - Html
 - Css
 - Javascript
 - Firebase
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://rajeshportfolio.me/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajesh-kanugu-aba8a3254/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/exploringengin1)
+
 
 ## Authors
 
